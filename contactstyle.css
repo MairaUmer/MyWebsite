@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Oxygen', sans-serif;
+    /* width: 100%;
+    height: 100%; */
+}
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 15px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: yellow;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: yellow;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }  
+ h1{
+    width: 50px;
+    height: 50px;
+    border-left: 20%;
+    border-right: 20%;
+    border-top: 20%;
+    border-bottom: 20%;
+    animation-name: ContactUsForm;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes ContactUsForm{
+    0%{
+         background-color: yellow;
+    }
+    /* 25%{
+         background-color: white;
+        
+    } */
+    50%{
+      opacity: 0.6;
+       
+    }
+    /* 100%{
+        background-color: gainsboro;
+        
+    } */
+} 
+
+.bg-img{
+background-image: url(/images/background.png);
+min-height: 825px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    /* width: 100%;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+ 
+}
+.container{
+    min-height: 100vh;
+    /* background: #08071d; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container form{
+    width:670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.container h1{
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+
+}
+.container form input{
+    width: 2290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid yellow;
+
+}
+.container form input::placeholder{
+    color:#ddd;
+}
+.container form #LastName,
+.container form #Mobile{
+    margin-left: 20px;
+
+}
+.container form h4{
+color: #fff;
+font-weight:300;
+width: 600px;
+margin-top: 20px;
+}
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid yellow;
+    color: #fff;
+    font-weight: 200px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 20px;
+    max-height: 20px;
+    
+}
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194, 194, 194, 0.173);
+}
+.container form #button{
+    border: none;
+    background: yellow;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+
+}
+.container form #button:hover{
+    opacity: 0.6;
+}
+footer{
+  background-color:#ffc61a;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height:300px;
+  /* padding-top: 100px; */
+}
+.footer-dark {
+  padding:50px 0;
+  color:black;
+  background-color:black;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+.social{
+  padding-top: 100px;
+  /* margin-top: 100px; */
+}
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  /* color:inherit; */
+  /* color: black; */
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-basic {
+  color: white;
+  /* padding:px 0; */
+  background-color:#ffffff;
+  /* color:black; */
+}
+
+.footer-basic ul {
+ color:white;
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  display:inline;
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  /* color: black; */
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+  color: black;
+}
+
+.footer-basic .social > a {
+  /* color: black; */
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid black;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:black;
+  margin-bottom:0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
